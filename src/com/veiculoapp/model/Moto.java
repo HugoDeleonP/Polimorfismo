@@ -19,13 +19,7 @@ public class Moto extends Veiculo{
     @Override
     public String toString(){
 
-        if(temCarenagem == true){
-            return "Marca: " + marca + " - Com carenagem";
-        }
-        else{
-            return "Marca: " + marca + " - Sem carenagem";
-        }
-
+        return "Marca: " + marca + " - " + (temCarenagem? "Com carenagem":"Sem carenagem");
 
     }
 }
